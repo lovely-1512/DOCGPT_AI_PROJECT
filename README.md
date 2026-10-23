@@ -1,26 +1,41 @@
----
-title: DocGPT AI
-emoji: 📚
-colorFrom: indigo
-colorTo: purple
-sdk: streamlit
-sdk_version: 1.36.0
-app_file: app.py
-pinned: false
----
-
 # 📚 DocGPT AI — Evidence-First Document Intelligence
 
-Upload PDF / PPTX / DOCX / TXT / CSV / XLSX → hybrid retrieval (FAISS + BM25 with
-Reciprocal Rank Fusion) → Cross-Encoder reranking → Groq LLM grounded answer
-with citations.
+**Live Demo:** [https://docgpt--rag-ai.streamlit.app/](https://docgpt--rag-ai.streamlit.app/)
 
-## Features
-- Chat with citations and confidence scoring
-- Compare two documents
-- Study mode (MCQ, flashcards, viva, revision notes)
-- Quiz mode with scoring
-- Voice input (Whisper via Groq)
+## 🚀 About the Project
+DocGPT AI is an intelligent document assistant that lets you chat with your PDFs, PPTX, DOCX, and CSV files. It uses a hybrid retrieval pipeline (FAISS + BM25) with Cross-Encoder reranking to provide grounded answers with exact citations.
 
-## Setup
-Set the `GROQ_API_KEY` secret in **Space Settings → Repository secrets**.
+![DocGPT AI Screenshot](app-screenshot.png)
+
+## ✨ Features
+- 💬 **Chat with Documents:** Ask questions and get grounded answers with confidence scores.
+- 🔍 **Document Comparison:** Compare information across two different files.
+- 📖 **Study Mode:** Generate MCQs, flashcards, viva questions, and revision notes.
+- 🎯 **Quiz Mode:** Test your knowledge with interactive quizzes based on your documents.
+- 🎙️ **Voice Input:** Ask questions using your voice (Whisper via Groq).
+
+## 🛠️ Tech Stack
+- **Frontend:** Streamlit
+- **Backend:** Python
+- **Embeddings:** Hugging Face (`all-MiniLM-L6-v2`)
+- **Vector Database:** FAISS
+- **Keyword Search:** BM25 + Reciprocal Rank Fusion (RRF)
+- **Reranker:** Cross-Encoder (`ms-marco-MiniLM-L-6-v2`)
+- **LLM:** Groq API (`openai/gpt-oss-120b`)
+
+## ⚙️ How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/lovely-1512/DOCGPT_AI_PROJECT.git
+
+2. Install dependencies:
+   '''bash
+   pip install -r requirements.txt
+   
+3. Set your Groq API key:
+   '''bash
+   export GROQ_API_KEY= "your_api_key_here"
+   
+4. Run the app:
+   '''bash
+   streamlit run app.py   
