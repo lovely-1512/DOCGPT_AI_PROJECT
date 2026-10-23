@@ -5,7 +5,7 @@
 ## 🚀 About the Project
 DocGPT AI is an intelligent document assistant that lets you chat with your PDFs, PPTX, DOCX, and CSV files. It uses a hybrid retrieval pipeline (FAISS + BM25) with Cross-Encoder reranking to provide grounded answers with exact citations.
 
-![DocGPT AI Screenshot](app-screenshot.png)
+![DocGPT AI Screenshot](app-screenshot1.png)
 
 ## ✨ Features
 - 💬 **Chat with Documents:** Ask questions and get grounded answers with confidence scores.
