@@ -29,13 +29,13 @@ DocGPT AI is an intelligent document assistant that lets you chat with your PDFs
    git clone https://github.com/lovely-1512/DOCGPT_AI_PROJECT.git
 
 2. Install dependencies:
-   '''bash
+   '''
    pip install -r requirements.txt
    
 3. Set your Groq API key:
-   '''bash
+   '''
    export GROQ_API_KEY= "your_api_key_here"
    
 4. Run the app:
-   '''bash
+   '''
    streamlit run app.py   
